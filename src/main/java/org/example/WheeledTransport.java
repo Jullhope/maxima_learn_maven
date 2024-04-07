@@ -26,6 +26,6 @@ public abstract class WheeledTransport implements Transport {
     }
 
     public void service() {
-        System.out.println("Обслужено колёс: " + wheelCount);
+        System.out.println("\nОбслужено колёс: " + wheelCount);
     }
 }

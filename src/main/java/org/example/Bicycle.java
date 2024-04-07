@@ -16,14 +16,15 @@ public final class Bicycle extends WheeledTransport {
         this.type = type;
     }
 
-    public final void pedal() {
-        System.out.println("\nКрути педали!");
+    private final void pedal() {
+        System.out.println("Крути педали!");
     }
 
     @Override
     public void service() {
         super.service();
         serveBicycle();
+        pedal();
     }
 
     private void serveBicycle() {
