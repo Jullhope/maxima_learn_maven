@@ -1,6 +1,6 @@
 package org.example;
 
-public class Truck extends MotorTransport {
+public final class Truck extends MotorTransport {
     private double cargoCapacity;
 
     public Truck(int wheelCount, int maxSpeed, String engineType, double cargoCapacity) {
@@ -16,6 +16,9 @@ public class Truck extends MotorTransport {
         this.cargoCapacity = cargoCapacity;
     }
 
+    public final void carryCargo() {
+        System.out.println("\nЗагружай!");
+    }
     @Override
     public void service() {
         super.service();
