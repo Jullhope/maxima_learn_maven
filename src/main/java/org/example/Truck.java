@@ -22,6 +22,9 @@ public final class Truck extends MotorTransport {
     @Override
     public void service() {
         super.service();
+        serveCargoTruck();
+    }
+    private void serveCargoTruck() {
         System.out.println("Обслужено грузовое транспортное средство с грузоподъемностью " + cargoCapacity + " тонн");
     }
 }

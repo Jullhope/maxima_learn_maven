@@ -1,6 +1,6 @@
 package org.example;
 
-public class WheeledTransport {
+public abstract class WheeledTransport implements Transport {
     private int wheelCount;
     private int maxSpeed;
 

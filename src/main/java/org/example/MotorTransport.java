@@ -1,6 +1,6 @@
 package org.example;
 
-public class MotorTransport extends WheeledTransport{
+public abstract class MotorTransport extends WheeledTransport{
     private String engineType;
 
     public MotorTransport(int wheelCount, int maxSpeed, String engineType) {

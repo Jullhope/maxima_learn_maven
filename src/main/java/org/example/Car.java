@@ -33,6 +33,10 @@ public final class Car extends MotorTransport {
     @Override
     public void service() {
         super.service();
+        serveCar();
+    }
+
+    private void serveCar() {
         System.out.println("Обслужено автомобиль марки \"" + brand + "\" модели \"" + model + "\"");
     }
 }
