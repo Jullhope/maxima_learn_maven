@@ -5,7 +5,7 @@ public class Main {
         transport.service();
     }
     public static void main(String[] args) {
-        Bicycle bicycle = new Bicycle(2, 20, "Горный");
+        Bicycle bicycle = new Bicycle(2, 20, "Городской");
         Car car = new Car(4, 180, "Бензиновый", "Toyota", "Corolla");
         Truck truck = new Truck(6, 100, "Электро", 10.0);
 
