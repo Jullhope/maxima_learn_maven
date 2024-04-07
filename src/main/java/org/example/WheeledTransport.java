@@ -25,6 +25,7 @@ public abstract class WheeledTransport implements Transport {
         this.maxSpeed = maxSpeed;
     }
 
+    @Override
     public void service() {
         System.out.println("\nОбслужено колёс: " + wheelCount);
     }
