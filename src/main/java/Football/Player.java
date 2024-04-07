@@ -29,7 +29,7 @@ public class Player {
         }
     }
 
-    public void info() {
+    static public void info() {
         if (countPlayers < 6) {
             System.out.println("Команды неполные. На поле еще есть " + (6 - countPlayers) + " свободных мест");
         } else {
