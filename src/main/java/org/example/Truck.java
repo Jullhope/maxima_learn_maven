@@ -16,12 +16,16 @@ public final class Truck extends MotorTransport {
         this.cargoCapacity = cargoCapacity;
     }
 
-    public final void carryCargo() {
-        System.out.println("\nЗагружай!");
+    private final void carryCargo() {
+        System.out.println("Загружай!");
     }
     @Override
     public void service() {
         super.service();
+        serveCargoTruck();
+        carryCargo();
+    }
+    private void serveCargoTruck() {
         System.out.println("Обслужено грузовое транспортное средство с грузоподъемностью " + cargoCapacity + " тонн");
     }
 }

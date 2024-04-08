@@ -26,13 +26,18 @@ public final class Car extends MotorTransport {
         this.model = model;
     }
 
-    public final void gasOn() {
-        System.out.println("\nЖми на газ!");
+    private final void gasOn() {
+        System.out.println("Жми на газ!");
     }
 
     @Override
     public void service() {
         super.service();
+        serveCar();
+        gasOn();
+    }
+
+    private void serveCar() {
         System.out.println("Обслужено автомобиль марки \"" + brand + "\" модели \"" + model + "\"");
     }
 }
